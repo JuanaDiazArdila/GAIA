@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+
+/*base*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 3.5rem 0 0 0;
+    font-family: 'poppins', sans-serif;
+    font-size: .938rem;
+    background: linear-gradient(60deg, #000 4%, #3b0844 20%, #000);
+    color: #fff;
+}
+
+/*header*/
+
+.header {
+    width: 100%;
+    background: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .6rem;
+}
+
+.nav {
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navL {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-weight: 500;
+}
+
+
+.navL-img {
+    width: 1.25rem;
+}
+
+
+.navLink,
+.navL,
+.navToggle,
+.navclose {
+    color: #fff;
+}
+
+.navToggle {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 765px) {
+    .navM {
+        position: fixed;
+        width: 100%;
+        background: #000;
+        top: -150%;
+        left: 0;
+        padding: 3.5rem 0;
+        transition: .4s;
+        z-index: 100;
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+}
+
+.navclose {
+    font-size: 1.8rem;
+    position: absolute;
+    top: .5rem;
+    right: .7rem;
+    cursor: pointer;
+}
+
+.navList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+
+}
+
+.navItem:hover {
+    background: #544a55;
+}
+
+.navItem {
+    border: white solid;
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+.navLink {
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: .4s;
+}
+
+.navLink:hover {
+    color: #fff;
+}
+
+/* show menu */
+.show-menu {
+    top: 0;
+}
+
+/* Change background header */
+.scroll-header {
+    background: #000000;
+}
+
+/* Active Link */
+.active-link {
+    position: relative;
+}
+
+.active-link::before {
+    content: "";
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/*HOME*/
+
+.grid {
+    display: grid;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content img {
+    width: 420px;
+    margin-top: 150px;
+}
+
+.content {
+    padding: 150px 50px 0px 0px;
+}
+
+.content h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.content p {
+    margin-top: 25px;
+    font-size: 17px;
+}
+
+
+
+.swiper-pagination {
+    position: initial;
+    margin-top: 1rem;
+}
+
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 .5rem;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem;
+    height: 5px;
+    border-radius: 0.5rem;
+}
+
+
+/*BUTTONS*/
+.button {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 1rem 1.75rem;
+    font-weight: 500;
+    transition: .3s;
+    margin-inline: 1%;
+    border-radius: 0.5rem;
+    border: white solid;
+
+}
+
+.button:hover {
+    background: #fff;
+    color: #000;
+    border: black solid;
+}
+
+.buttonicon {
+    font-size: 1.25rem;
+}
+
+
+.button2 {
+    display: inline-block;
+    background-color: #970000;
+    color: #fff;
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+
+/*FOOTER*/
+
+.footercontainer {
+    row-gap: 2rem;
+}
+
+.footerL {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footerL-img {
+    width: 20px;
+}
+
+.footerdescription {
+    margin-bottom: 2.5rem;
+}
+
+.footersocial {
+    display: flex;
+    column-gap: .75rem;
+}
+
+.footersocial-link {
+    display: inline-flex;
+    background: #692c78;
+    padding: .25rem;
+    border-radius: .25rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.footersocial-link:hover {
+    background: #000000;
+}
+
+.footertitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footerlinks {
+    display: grid;
+    row-gap: .35rem;
+}
+
+.footerlink {
+    font-size: .813rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.footerlink:hover {
+    color: #fff;
+}
+
+.footercopy {
+    display: block;
+    text-align: center;
+    font-size: .75rem;
+    margin-top: 4.5rem;
+}
+
+/*scroll up*/
+
+.scrollup {
+    position: fixed;
+    background: #b40101;
+    right: 1rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: .3rem;
+    border-radius: .25rem;
+    z-index: 10;
+    opacity: .8s;
+    transition: .4s;
+}
+
+.scrollupicon {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.scrollup:hover {
+    background-color: #19021f;
+    opacity: 1;
+}
+
+.show-scroll {
+    bottom: 3rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background: #1b1919;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: .5rem;
+}
+
+/*RESPONSIVE*/
+
+
+
+@media(max-width:991px) {
+
+.header-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.content {
+    padding: 0;
+}
+
+.content h1 {
+    margin-top: 0;
+}
+
+.content p {
+    margin-top: 15px;
+}
+
+.btn-1 {
+    margin-top: 15px;
+}
+
+.header-content img {
+    margin-top: 45px;
+    width: 200px;
+}
+}
+
+
+
+@media (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 7rem 0 2rem;
+    }
+
+    .nav {
+        height: calc(3.5rem +1.5rem);
+    }
+
+    .navclose,
+    .navtoggle {
+        display: none;
+    }
+
+    .navList {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+
+    .navLink {
+        text-transform: initial;
+        font-weight: initial;
+    }
+
+    .homecont {
+        padding: 8rem 0 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .homeimg {
+        height: 270px;
+        width: 300px;
+    }
+
+    .swiper-pagination {
+        margin-top: 2rem;
+    }
+
+   
+
+    .footercopy {
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .homeimg {
+        height: 420px;
+    }
+
+    .swiper-pagination {
+        margin-top: 2.5rem;
+    }
+
+
+}
